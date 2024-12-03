@@ -7,7 +7,8 @@
     <persistence-unit name="cloud-service">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>ru.netology.usertableapp.entity.Files</class>
-	<class>ru.netology.usertableapp.entity.Downloads</class>
+	    <class>ru.netology.usertableapp.entity.Downloads</class>
+        <class>ru.netology.usertableapp.entity.Users</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1" />
