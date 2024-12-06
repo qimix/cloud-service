@@ -21,7 +21,7 @@ public class CloudController {
 
     @GetMapping("/files/by-name")
     public List<Files> getListFilesController(@RequestParam("name") String name) {
-        return cloudService.getListFiles(new FilesDTO(name));
+        return cloudService.findFilesByName(new FilesDTO(name));
     }
 
 }

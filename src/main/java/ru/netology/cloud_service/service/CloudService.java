@@ -16,7 +16,7 @@ public class CloudService {
     FilesRepository filesRepository;
 
     @Transactional
-    public List<Files> getListFiles(FilesDTO filesDTO) {
+    public List<Files> findFilesByName(FilesDTO filesDTO) {
         return filesRepository.findFilesByName(filesDTO.getName());
     }
 }
